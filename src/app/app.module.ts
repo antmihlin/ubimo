@@ -15,7 +15,6 @@ import { AdPopupComponent } from './components/navigation/ad-popup/ad-popup.comp
 import { UbimoAdDispatcherService } from './services/ubimo-ad-dispatcher.service';
 import { AdsExchangeService } from './services/ads-exchange.service';
 
-import { AdDispatcher } from './services/ad-dispatcher.d';
 import { AdsTypeComponent } from './components/side/ads-type/ads-type.component';
 import { AdsStartFilterPipe } from './pipes/ads-start-filter.pipe';
 import { AdsEndFilterPipe } from './pipes/ads-end-filter.pipe';
@@ -41,7 +40,6 @@ import { ArrayReversePipe } from './pipes/array-reverse.pipe';
   ],
   providers: [
 	  UbimoAdDispatcherService,
-	  AdDispatcher,
 	  AdsExchangeService
   ],
   bootstrap: [AppComponent]
