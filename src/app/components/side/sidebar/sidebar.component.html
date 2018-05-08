@@ -1,0 +1,21 @@
+<h3>Ads</h3>
+
+<div class="sidebar__filters">
+		<div class="form-group">
+			<label for="startTime">Start time</label>
+			<input type="text" class="form-control" id="startTime" [(ngModel)]="startTime"
+				   name="startTime" aria-describedby="startTime" placeholder="Start time">
+		</div>
+		<div class="form-group">
+			<label for="endTime">End time</label>
+			<input type="text" class="form-control" id="endTime" [(ngModel)]="endTime"
+				   name="endTime" aria-describedby="endTime" placeholder="End time">
+		</div>
+</div>
+<div class="sidebar__list">
+	<ul class="list-group">
+		<li app-ads-list-item class="list-group-item" 
+			*ngFor="let ad of ads | adsStartFilter:startTime | adsEndFilter:endTime | arrayReverse"
+			[ad]="ad"></li>
+	</ul>
+</div>

@@ -1,0 +1,6 @@
+<span >{{ad.time | date: 'HH:mm:ss'}}</span>
+<span><app-ads-type [mediaType]="ad.type"></app-ads-type></span>
+<span>{{ad.creative.name}}</span>
+<a href="{{ad.creative.url}}" target="_blank"><fa name="link" ></fa></a>
+<br>
+<span>x:{{ad.coordinate.x}},y:{{ad.coordinate.y}}</span>

@@ -1,0 +1,8 @@
+<div class="map-field">
+	<app-ad-popup class="ad-popup" [ad]="advertisement" *ngIf="advertisement"
+		[style.left.px]="advertisement.coordinate.x" 
+		[style.top.px]="advertisement.coordinate.y"
+		></app-ad-popup>
+
+	<img src="assets/images/got-map.png" />
+</div>

@@ -1,0 +1,8 @@
+<div class="ad-popup__inner">	
+	<img src='{{advertisement.creative.url}}' *ngIf="advertisement.type == 'IMAGE'" />
+	<video *ngIf="advertisement.type == 'VIDEO'" width="320" height="240"
+		muted="true" autoplay onloadedmetadata="this.muted = true">
+	  <source src="{{advertisement.creative.url}}" type="video/mp4">
+	Your browser does not support the video tag.
+	</video>
+</div>
