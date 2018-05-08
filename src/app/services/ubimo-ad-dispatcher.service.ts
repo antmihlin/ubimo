@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { AdDispatcher } from 'ubimo-fed-ha-master';
+import {AdDispatcher} from './ad-dispatcher';
 
 @Injectable()
 export class UbimoAdDispatcherService {

@@ -1,5 +1,8 @@
 {
   "compileOnSave": false,
+  "include":[
+    "./src/app/services/ad-dispatcher.d.ts"
+  ],
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
